@@ -12,13 +12,13 @@ spring:
     gateway:
       routes:
       - id: qs
-        uri: lb://localhost:8088
+        uri: lb://backing-service:8088
         predicates:
         - Path=/qs/**
         filters:
         - RewritePath=/qs, /
       - id: quote
-        uri: lb://localhost:8088
+        uri: lb://backing-service:8088
         predicates:
         - Path=/quote
         filters:

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 @EnableHystrix
 @SpringBootApplication
 public class EdgeServiceApplication {
